@@ -6,7 +6,7 @@
 /*   By: edvicair <edvicair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 06:05:36 by edvicair          #+#    #+#             */
-/*   Updated: 2023/03/29 11:02:22 by edvicair         ###   ########.fr       */
+/*   Updated: 2023/05/18 23:33:12 by edvicair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void    init_cub(t_cub *cub)
     cub->wall_e = NULL;
     cub->f = 0;
     cub->c = 0;
+    cub->height = 0;
+    cub->width = 0;
     cub->map = NULL;
 }
 

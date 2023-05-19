@@ -6,7 +6,7 @@
 /*   By: edvicair <edvicair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 04:03:02 by edvicair          #+#    #+#             */
-/*   Updated: 2023/03/31 15:18:13 by edvicair         ###   ########.fr       */
+/*   Updated: 2023/05/19 01:11:58 by edvicair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -172,6 +172,12 @@ bool     parser(t_cub *cub, char **av)
         return (1);
     if (fill_cub(cub, av))
         return (1);
+    int i = 0;
+    while(cub->map[i])
+    {
+        printf("%s\n", cub->map[i]);
+        i++;
+    }
     if (check_map(*cub))
         return (1);
     return (0);
